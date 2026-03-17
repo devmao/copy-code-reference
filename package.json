@@ -1,0 +1,36 @@
+{
+  "name": "copy-code-reference",
+  "displayName": "Copy Code Reference",
+  "description": "Copy file path and selected line range to clipboard (file:startLine-endLine)",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:copyCodeReference.copy"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "copyCodeReference.copy",
+        "title": "Copy Code Reference (file:startLine-endLine)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "copyCodeReference.copy",
+        "key": "ctrl+alt+c",
+        "mac": "cmd+alt+c"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -p ./ -w"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.0.0"
+  }
+}
