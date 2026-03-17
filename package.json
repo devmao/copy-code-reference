@@ -2,19 +2,25 @@
   "name": "copy-code-reference",
   "displayName": "Copy Code Reference",
   "description": "Copy file path and selected line range to clipboard (file:startLine-endLine)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "local",
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onCommand:copyCodeReference.copy"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:copyCodeReference.copy"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "copyCodeReference.copy",
-        "title": "Copy Code Reference (file:startLine-endLine)"
+        "title": "Copy Code Reference (file:startLine-endLine)",
+        "icon": "$(references)"
       }
     ],
     "keybindings": [
