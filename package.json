@@ -1,6 +1,6 @@
 {
   "name": "copy-code-reference",
-  "displayName": "Copy Code Reference",
+  "displayName": "Copy: Code Reference",
   "description": "Copy file path and selected line range to clipboard (file:startLine-endLine)",
   "version": "0.1.0",
   "publisher": "devmao",
