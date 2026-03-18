@@ -2,7 +2,7 @@
   "name": "copy-code-reference",
   "displayName": "Copy Code Reference",
   "description": "Copy file path and selected line range to clipboard (file:startLine-endLine)",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "publisher": "local",
   "icon": "media/icon.png",
   "engines": {
