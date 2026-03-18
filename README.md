@@ -4,6 +4,15 @@ VS Code extension that copies a reference to the current file and selected line 
 
 **Output format:** `path/to/file.ts:96-101` (or `path/to/file.ts:96` when a single line is selected)
 
+## Default shortcut
+
+| OS | Shortcut |
+|----|----------|
+| macOS | `Cmd+Alt+C` |
+| Windows / Linux | `Ctrl+Alt+C` |
+
+To change the shortcut, open **Preferences > Keyboard Shortcuts** (`Cmd+K Cmd+S` on macOS, `Ctrl+K Ctrl+S` on Windows/Linux), search for `Copy Code Reference`, and assign your preferred key combination.
+
 ## How to run
 
 1. Open the `copy-code-reference` folder in VS Code (or Cursor).

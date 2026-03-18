@@ -11,9 +11,6 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:copyCodeReference.copy"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [

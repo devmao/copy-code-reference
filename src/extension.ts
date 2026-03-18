@@ -16,14 +16,18 @@ export function activate(context: vscode.ExtensionContext) {
 
       const selection = editor.selection;
       const startLine = selection.start.line + 1;
-      const endLine = selection.end.line + 1;
+      let endLine = selection.end.line + 1;
+      if (selection.end.character === 0 && endLine > startLine) {
+        endLine--;
+      }
       const range =
         startLine === endLine ? `${startLine}` : `${startLine}-${endLine}`;
 
       const reference = `${filePath}:${range}`;
-      vscode.env.clipboard.writeText(reference).then(() => {
-        vscode.window.showInformationMessage(`Copied: ${reference}`);
-      });
+      vscode.env.clipboard.writeText(reference).then(
+        () => vscode.window.showInformationMessage(`Copied: ${reference}`),
+        () => vscode.window.showErrorMessage('Failed to copy to clipboard.')
+      );
     })
   );
 }
